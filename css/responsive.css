@@ -1,17 +1,8 @@
 /*==============================================================================
-
- * Template Name: Optio - CV, Resume, vCard, Portfolio HTML Template
- * Template URI: 
- * Author: ixtheme - (https://themeforest.net/user/ixtheme)
- * Description: CV, Resume, vCard, Portfolio HTML Template
- * Version: 1.0
- * Copyright 2019 ixtheme
-
- ==============================================================================*/
-
+ * Responsive CSS
+==============================================================================*/
 
 /* Large devices (desktops, 991px and down) */
-
 @media (max-width: 991px) {
     .hero-content .intro-name {
         font-size: 48px;
@@ -31,16 +22,18 @@
     header.fixed {
         max-width: calc(100% - 245px);
     }
+    .wrapper-heading {
+        margin-bottom: 55px;
+    }
 }
 
-@media (max-width: 800px) and (min-width:768px) {
+@media (max-width: 800px) and (min-width: 768px) {
     .hero-content .intro-name {
         font-size: 36px;
     }
 }
 
 /* Medium devices (tablets, 768px and down) */
-
 @media (max-width: 767px) {
     .home-wrapper .hero-img .shape::before {
         font-size: 70vw;
@@ -82,94 +75,201 @@
     .hero-content .intro-name {
         font-size: 40px;
     }
+    .wrapper-heading {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    /* Education & Experience – 2 cols on tablet */
+    .education-single,
+    .experience-single {
+        margin-bottom: 25px;
+    }
+    /* Work items image height */
+    .work-single-item img {
+        height: 210px;
+    }
 }
 
 /* Small devices (mobile, 575px and down) */
 @media (max-width: 575px) {
-    .hero-content .intro-name {
-        font-size: 32px;
-    }
-    .hero-content p span {
-        padding-left: 30px;
-    }
-    .hero-content p span::after {
-        height: 1px;
-        top: 14px;
-        width: 20px;
-    }
+
+    /* ── General ── */
     .wrapper {
-        padding: 65px 0;
+        padding: 55px 0;
     }
-    .blog-title {
-        font-size: 20px;
+    .wrapper-heading {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .main-content .container-fluid {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /* ── Hero ── */
+    .home-wrapper {
+        padding: 70px 0 50px;
+    }
+    .home-wrapper .row {
+        flex-direction: column-reverse;
+    }
+    .home-wrapper .hero-img {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .home-wrapper .hero-img img {
+        max-width: 240px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
     }
     .hero-content {
-        margin-top: 70px;
+        text-align: center;
+        margin-top: 0;
     }
-    .clients-carousel .client-img::after {
-        font-size: 14px;
+    .hero-content .intro-name {
+        font-size: 34px;
     }
-    .hero-content p {
-        font-size: 18px;
+    .hero-content p span {
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .hero-content p span::after {
+        display: none;
     }
     .hero-content p::after {
-        top: 15px;
+        display: none;
     }
-    .service-item span {
-        margin-bottom: 20px;
+    .social-links {
+        text-align: center;
     }
+
+    /* ── About ── */
+    .about-sub-heading {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+    }
+    .about-text {
+        font-size: 14px !important;
+    }
+
+    /* ── Services ── */
     .service-wrapper {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
     }
     .service-item {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
-    .home-wrapper {
-        padding: 80px 0;
-        padding-bottom: 60px;
+    .service-item span {
+        margin-bottom: 16px;
+    }
+
+    /* ── Skills ── */
+    .skills-wrapper {
+        padding-bottom: 35px;
+    }
+    .skill-item p {
+        font-size: 13px;
+    }
+
+    /* ── Education ── */
+    .education-wrapper {
+        padding-bottom: 15px;
+    }
+    .education-single {
+        margin-bottom: 25px;
+    }
+    .education-single h4.course-name {
+        font-size: 15px !important;
+    }
+
+    /* ── Experience ── */
+    .experience-wrapper {
+        padding-bottom: 20px;
+    }
+    .experience-single {
+        margin-bottom: 25px;
+    }
+    .experience-single h4.company {
+        font-size: 16px !important;
+    }
+    .experience-single p.company-info {
+        font-size: 13px;
+    }
+
+    /* ── Works / Gallery ── */
+    .works-wrapper {
+        padding-bottom: 40px;
     }
     .filter-buttons {
         margin-bottom: 25px;
+        gap: 8px;
     }
     .filter-buttons button {
-        margin-right: 15px;
-        margin-bottom: 15px;
+        font-size: 12px;
+        padding: 6px 14px;
     }
-    .skills-wrapper {
-        padding-bottom: 45px;
+    .work-single-item img {
+        height: 185px;
     }
-    .education-wrapper {
-        padding-bottom: 20px;
+    .work-single-item h6 {
+        font-size: 13px;
     }
-    .experience-wrapper {
-        padding-bottom: 34px;
+
+    /* ── Contact ── */
+    .contact-details h4 {
+        font-size: 18px !important;
+        margin-bottom: 8px;
     }
-    .works-wrapper {
-        padding-bottom: 58px;
+    .contact-info p {
+        font-size: 13px;
+        margin-bottom: 10px;
     }
-    .blogs-wrapper {
-        padding-bottom: 28px;
-    }
+
+    /* ── Footer ── */
     .footer-social a {
         padding: 0 4px;
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .footer-copyright {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    /* ── Blog heading ── */
+    .blog-title {
+        font-size: 20px;
     }
 }
 
-/* extraSmall devices ( 400px and down) */
+/* Extra small devices (400px and down) */
 @media (max-width: 415px) {
     .main-content .container-fluid {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .scroll-to-top {
-        right: 20px;
+        right: 15px;
     }
     .scroll-to-top.show {
-        bottom: 20px;
+        bottom: 15px;
+    }
+    .hero-content .intro-name {
+        font-size: 28px;
+    }
+    .work-single-item img {
+        height: 165px;
+    }
+    /* Single column for education on very small phones */
+    .education-wrapper .col-sm-6,
+    .experience-wrapper .col-md-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
     }
     .clients-carousel .client-img::after {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
